@@ -1,0 +1,44 @@
+{
+  "name": "saveflow",
+  "version": "0.0.3",
+  "packageManager": "pnpm@8.0.0",
+  "description": "A relief tool based on command line",
+  "type": "module",
+  "keywords": [],
+  "author": "CharleeWa",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "saveflow": "bin/flow.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.1.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.15.11",
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@antfu/eslint-config"
+  }
+}
