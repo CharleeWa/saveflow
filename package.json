@@ -2,7 +2,7 @@
   "name": "saveflow",
   "version": "0.0.3",
   "packageManager": "pnpm@8.0.0",
-  "description": "A relief tool based on command line",
+  "description": "An command-line decompression tool",
   "type": "module",
   "keywords": [],
   "author": "CharleeWa",
